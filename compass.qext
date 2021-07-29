@@ -1,9 +1,9 @@
 {
 	"type": "mashup",
-	"name": "TourismBook",
+	"name": "Compass",
 	"description": "Tourism Saudi Template",
 	"homepage": "",
-	"author": "Hadi YASSINE",
+	"author": "Artefact",
 	"version": "1.0.0",
 	"preview": "preview.png",
 	"keywords": "qlik-sense, mashup, dashboard",
@@ -12,5 +12,5 @@
 	"dependencies": {
 		"qlik-sense": ">=1.0.x"
 	},
-	"src": "/extensions/TourismBook/preview.png"
+	"src": "/extensions/compass/preview.png"
 }
