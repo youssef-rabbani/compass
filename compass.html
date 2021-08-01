@@ -353,81 +353,38 @@
       force-narrow="true"
       disable-edge-swipe="true"
     >
-      <div drawer="">
-        <div class="drawer-title">Filters</div>
-        <div class="filter-container">
-          <div class="qvplaceholder" id="qvfilters"></div>
-        </div>
-      </div>
+     
       <paper-header-panel main="">
-        <div class="paper-header">
-          <paper-toolbar>
-            <paper-icon-button
-              icon="menu"
-              id="nav-menu-button"
-              class="visible-xs-block"
-            ></paper-icon-button>
-
-            <div
-              class="PaperTitle"
-              style="padding-left: 155px; height: 25px; font-size: 15px"
-            >
-              <span
-                id="btnTourismPerformance"
-                class="PaperTitleItem PaperTitleSelectedItem"
-                >Overview</span
-              >
-              <span id="btnInspire" class="PaperTitleItem">Dream</span>
-              <span id="btnBook" class="PaperTitleItem">Book</span>
-              <span id="btnSpend" class="PaperTitleItem">Experience</span>
-              <span id="btnAdvocate" class="PaperTitleItem">Share</span>
-            </div>
-            <!--TITLE-->
-          </paper-toolbar>
-        </div>
-        <paper-drawer-panel id="nav-drawer" drawer-width="0px">
-          <div drawer="" style="visibility: hidden">
-            <paper-menu selected="0">
-              <!-- LEFT NAV -->
-              <!-- Edit <paper-item> to customize left panel -->
-              <!-- A <paper-item> will navigate to the corresponding .paper-body view (below) -->
-              <paper-item>
-                <div class="icon">
-                  <i class="fa fa-tachometer" aria-hidden="true"></i>
+         
+           <nav class="navbar navbar-inverse bg-dark" style="border: 0;">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">Brand</a>
                 </div>
-                <div class="menu-option">Overview</div>
-              </paper-item>
-              <paper-item>
-                <div class="icon">
-                  <i class="fa fa-compass" aria-hidden="true"></i>
+                <!-- Collection of nav links, forms, and other content for toggling -->
+                <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                      <li class="active">
+                        <a data-toggle="pill" href="#pgTourismPerformance">Overview</a>
+                      </li>
+                      <li><a data-toggle="pill" href="#pgInspire">Dream</a></li>
+                      <li><a data-toggle="pill" href="#pgBook">Book</a></li>
+                      <li><a data-toggle="pill" href="#pgSpend">Experience</a></li>
+                      <li><a data-toggle="pill" href="#pgAdvocate">Share</a></li>
+                    </ul>
                 </div>
-                <div class="menu-option">Dream</div>
-              </paper-item>
-              <paper-item>
-                <div class="icon">
-                  <i class="fa fa-file-text" aria-hidden="true"></i>
-                </div>
-                <div class="menu-option">Book</div>
-              </paper-item>
-              <paper-item>
-                <div class="icon">
-                  <i class="fa fa-tachometer" aria-hidden="true"></i>
-                </div>
-                <div class="menu-option">Experience</div>
-              </paper-item>
-              <paper-item>
-                <div class="icon">
-                  <i class="fa fa-compass" aria-hidden="true"></i>
-                </div>
-                <div class="menu-option">Share</div>
-              </paper-item>
-            </paper-menu>
-          </div>
-
-          <iron-pages main="" selected="0">
+            </nav>
+          
+          <div class="tab-content">
             <!-- Each .paper-body contained within <iron-pages> is a view. Copy and paste to add more views. -->
             <!-- Don't forget to add a <paper-item> in the <paper-menu> above to be able to navigate to any view you add -->
-            <div class="paper-body" id="pgTourismPerformance">
+            <div class="paper-body tab-pane fade in active" id="pgTourismPerformance">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -1082,7 +1039,7 @@
               </div>
             </div>
 
-            <div class="paper-body" id="pgInspire">
+            <div class="paper-body tab-pane fade" id="pgInspire">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -1786,7 +1743,7 @@
               </div>
             </div>
 
-            <div class="paper-body" id="pgBook">
+            <div class="paper-body tab-pane fade" id="pgBook">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -2304,7 +2261,7 @@
               </div>
             </div>
 
-            <div class="paper-body" id="pgSpend">
+            <div class="paper-body tab-pane fade" id="pgSpend">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -2781,7 +2738,7 @@
               </div>
             </div>
 
-            <div class="paper-body" id="pgAdvocate">
+            <div class="paper-body tab-pane fade" id="pgAdvocate">
               <div class="container-fluid">
                 <!--Filters-->
                 <div class="row" style="width: 80%; margin: 0px; padding: 0px">
@@ -3432,8 +3389,9 @@
                 Confidential data / Sources: Voice of Visitors
               </div>
             </div>
-          </iron-pages>
-        </paper-drawer-panel>
+          
+          </div>
+       
       </paper-header-panel>
     </paper-drawer-panel>
     <div class="FooterCaption">

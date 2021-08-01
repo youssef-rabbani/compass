@@ -324,6 +324,9 @@ require(["js/qlik"], function (qlik) {
 		$(".PaperTitleItem").click(function() {
 			qlik.resize();
 		});
+		$("a").click(function() {
+			qlik.resize();
+		});
 	
 app.getObject('CurrentSelections','CurrentSelections');
 		$(".filter-drawer-toggle, paper-menu paper-item").click(function() {
