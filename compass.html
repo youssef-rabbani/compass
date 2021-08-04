@@ -17,42 +17,7 @@
     <!--Polymer stuff -->
     <script src="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="qliksense-card.html" />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/iron-flex-layout/iron-flex-layout-classes.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-header-panel/paper-header-panel.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-toolbar/paper-toolbar.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-drawer-panel/paper-drawer-panel.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-icon-button/paper-icon-button.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/iron-icons/iron-icons.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/iron-pages/iron-pages.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-menu/paper-menu.html"
-    />
-    <link
-      rel="import"
-      href="https://cdn.rawgit.com/download/polymer-cdn/1.7.0.2/lib/paper-item/paper-item.html"
-    />
+    
     <link rel="import" href="polymer-mixins.html" />
     <style is="custom-style" include="iron-flex iron-positioning"></style>
     <style is="custom-style" include="polymer-mixins"></style>
@@ -305,31 +270,7 @@
         });
       });
 
-      $(document).ready(function () {
-        $(".PaperTitleItem").on("click", function () {
-          $(".PaperTitleItem").removeClass("PaperTitleSelectedItem");
-          $(".paper-body").removeClass("iron-selected");
-          $(this).addClass("PaperTitleSelectedItem");
-          switch (this.id) {
-            case "btnTourismPerformance":
-              $("#pgTourismPerformance").addClass("iron-selected");
-              break;
-            case "btnInspire":
-              $("#pgInspire").addClass("iron-selected");
-              break;
-            case "btnBook":
-              $("#pgBook").addClass("iron-selected");
-              break;
-            case "btnSpend":
-              $("#pgSpend").addClass("iron-selected");
-              break;
-            case "btnAdvocate":
-              $("#pgAdvocate").addClass("iron-selected");
-              break;
-            default:
-          }
-        });
-      });
+      
 
       $(document).ready(function () {
         $("#selectDigital").click();
@@ -348,18 +289,11 @@
   </head>
 
   <body class="fullbleed vertical layout">
-    <paper-drawer-panel
-      right-drawer=""
-      force-narrow="true"
-      disable-edge-swipe="true"
-    >
-     
-      <paper-header-panel main="">
          
            <nav class="navbar navbar-inverse bg-dark" style="border: 0;">
             <a href="#" class="navbar-brand l1"></a>    
             <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header" style="display: inline-block; width: 25%;">
+            <div class="navbar-header" style="display: inline-block; width: 12%;">
               <a class="navbar-brand" href="#" style="padding: 0;">
                 <img alt="Brand" src="1a.PNG" style="height: 100%; width: 100%;">
               </a>
@@ -395,7 +329,7 @@
           <div class="tab-content">
             <!-- Each .paper-body contained within <iron-pages> is a view. Copy and paste to add more views. -->
             <!-- Don't forget to add a <paper-item> in the <paper-menu> above to be able to navigate to any view you add -->
-            <div class="paper-body tab-pane fade in active" id="pgTourismPerformance">
+            <div class="tab-pane fade in active" id="pgTourismPerformance">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -482,7 +416,7 @@
                     </div>
                   </div>
                 </div>
-                <!--- <div
+                <div
                   style="
                     float: right;
                     text-align: end;
@@ -494,7 +428,7 @@
                   "
                 >
                   Refresh Date: 27 May, 2021
-                </div>-->
+                </div>
 
                 <div class="row">
                   <div class="col-xs-12 col-md-4 margin-bottom">
@@ -927,7 +861,7 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-xs-12 col-sm-12">
+                  <div class="col-xs-12">
                     <div
                       style="
                         text-align: right;
@@ -958,12 +892,7 @@
                         </button>
                       </div>
                     </div>
-                    <div style="position: absolute; z-index: 100; top: 103px">
-                      <img
-                        src="Inspire-Pivot.png"
-                        style="height: 0px; padding-left: 5px"
-                      />
-                    </div>
+                    
                     <qliksense-card content-height="250px">
                       <div class="card-title qvt-visualization-title">
                         Visitor Funnel
@@ -971,34 +900,29 @@
                       <div
                         id="sourceMarket-1"
                         style="
-                          height: 100%;
-                          top: 25px;
-                          height: 192px;
+                          top: 25px;                          
                           position: relative;
                         "
                       >
-                        <div class="row" style="height: 100%">
-                          <div class="col-xs-4" style="padding-right: 0px">
+                        <div class="row">
+                          <div class="col-xs-7 col-sm-4" style="padding: 0px; height: 217px;">
                             <div
-                              class="with-title qvobject object"
+                              class="with-title qvobject"
                               id="QV-1-8a"
-                              style="height: 195px"
+                              style="overflow-y: hidden;"
                             ></div>
                           </div>
                           <div
-                            class="col-xs-8"
+                            class="col-xs-5 col-sm-8"
                             style="
-                              top: 3px;
-                              margin-left: -151px;
-                              width: calc(66.666% + 151px);
+                            padding: 0;
                               z-index: 0;
-                              height: 195px;
+                              height: 217px;
                             "
                           >
                             <div
-                              class="with-title qvobject object"
+                              class="with-title qvobject"
                               id="QV-1-8b"
-                              style="height: 100%"
                             ></div>
                           </div>
                         </div>
@@ -1050,7 +974,7 @@
               </div>
             </div>
 
-            <div class="paper-body tab-pane fade" id="pgInspire">
+            <div class="tab-pane fade" id="pgInspire">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -1157,7 +1081,7 @@
                     </div>
                   </div>
                 </div>
-                <!--<div
+                <div
                   class=""
                   style="
                     float: right;
@@ -1170,7 +1094,7 @@
                   "
                 >
                   Refresh Date: 27 May, 2021
-                </div>-->
+                </div>
 
                 <div class="row" id="kpiInspire">
                   <div class="col-xs-12 col-md-4 margin-bottom">
@@ -1754,7 +1678,7 @@
               </div>
             </div>
 
-            <div class="paper-body tab-pane fade" id="pgBook">
+            <div class="tab-pane fade" id="pgBook">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -1861,7 +1785,7 @@
                     </div>
                   </div>
                 </div>
-                <!--<div
+                <div
                   class=""
                   style="
                     float: right;
@@ -1874,7 +1798,7 @@
                   "
                 >
                   Refresh Date: 27 May, 2021
-                </div>-->
+                </div>
 
                 <div class="row" id="kpiBook">
                   <div class="col-xs-12 col-md-4 margin-bottom">
@@ -2272,7 +2196,7 @@
               </div>
             </div>
 
-            <div class="paper-body tab-pane fade" id="pgSpend">
+            <div class="tab-pane fade" id="pgSpend">
               <div class="container-fluid">
                 <!-- A .qvplaceholder will become a droppable area in the dev-hub -->
                 <!-- Each .qvplaceholder must have a unique id -->
@@ -2379,7 +2303,7 @@
                     </div>
                   </div>
                 </div>
-                <!--- <div
+                <div
                   class=""
                   style="
                     float: right;
@@ -2392,7 +2316,7 @@
                   "
                 >
                   Refresh Date: 27 May, 2021
-                </div>-->
+                </div>
 
                 <div class="row" id="kpiExperience">
                   <div class="col-xs-12 col-md-4 margin-bottom">
@@ -2749,7 +2673,7 @@
               </div>
             </div>
 
-            <div class="paper-body tab-pane fade" id="pgAdvocate">
+            <div class="tab-pane fade" id="pgAdvocate">
               <div class="container-fluid">
                 <!--Filters-->
                 <div class="row" style="width: 80%; margin: 0px; padding: 0px">
@@ -2854,7 +2778,7 @@
                     </div>
                   </div>
                 </div>
-                <!--<div
+                <div
                   class=""
                   style="
                     float: right;
@@ -2867,7 +2791,7 @@
                   "
                 >
                   Refresh Date: 27 May, 2021
-                </div>-->
+                </div>
 
                 <!--KPIs-->
                 <div class="row" id="kpiShare">
@@ -3403,74 +3327,19 @@
           
           </div>
        
-      </paper-header-panel>
-    </paper-drawer-panel>
     <div class="FooterCaption">
       Confidential data, reading from official sources based on HH Survey
       (Refreshed Apr 2021); Dotted line based on Telco data source (unofficial
       source)
     </div>
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="basic"
-      tabindex="-1"
-      role="basic"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-hidden="true"
-            ></button>
-            <h4 class="modal-title">Help text</h4>
-          </div>
-          <div class="modal-body">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a
-              diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac
-              quam viverra nec consectetur ante hendrerit. Donec et mollis
-              dolor. Praesent et diam eget libero egestas mattis sit amet vitae
-              augue. Nam tincidunt congue enim, ut porta lorem lacinia
-              consectetur. Donec ut libero sed arcu vehicula ultricies a non
-              tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed,
-              adipiscing id dolor.
-            </p>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn dark btn-outline"
-              data-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-        <!-- /.modal-content -->
-      </div>
-      <!-- /.modal-dialog -->
-    </div>
-    <!-- End Modal -->
+   
 
     <script>
       var root = this.root;
       $(document).ready(function () {
-        $("#nav-drawer paper-menu paper-item").click(function () {
-          var index = $(this).index();
-          Polymer.dom(root).querySelector("iron-pages").selectIndex(index);
-        });
-        $("#nav-menu-button").click(function () {
-          Polymer.dom(root).querySelector("#nav-drawer").togglePanel();
-        });
-        $(window).resize(function () {
-          Polymer.updateStyles();
-        });
+        
+       
+        
       });
     </script>
   </body>

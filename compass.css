@@ -39,6 +39,9 @@
     right: 5px !important;
     left: auto !important;
 }
+.object{
+    padding: 0 15px 15px;
+}
 .qv-pt .cell.numeric {
     border: thin solid RGB(16,25,57) !important;
 }
@@ -55,11 +58,22 @@
     padding-left: 29px;
     color: grey;
 }
-#QV-1-8b .qv-pt .cell.header.left .value{
-display:none;
+#QV-1-8b td.cell.ng-scope.header.left{
+display: none !important;
 }
+#QV-1-8b th.cell.ng-scope.header.empty.left-meta.bottom-meta{
+    display: none !important;
+
+}
+#QV-1-8b col.ng-scope{
+    display: none !important;
+}
+.qv-pt .cell.header.top .value{
+    display: contents !important;
+}
+
 #QV-1-8e .qv-pt .cell.header.left .value{
-display:none;
+display:hidden;
 }
 #QV-2-9c2 .qv-object{
 padding:0px;
@@ -186,9 +200,7 @@ css_bars_bar.BAR-2{
 .item {
     border-radius: 10px;
 }
-.object{
-    padding: 0 15px 15px;
-}
+
 
 
 #QV-3-8 .Pre-Chart-Title{
@@ -469,7 +481,7 @@ header.qv-object-header.thin {
 .qv-pt .cell.header.left {
 	color:white;
 	border:none !important;
-	font-size:12px !important;
+	font-size:0.7em !important;
 }
 th.cell.ng-scope.header.empty.left-meta.bottom-meta{
 color:white;
@@ -484,7 +496,8 @@ table.ng-scope td {
 }
 .qv-pt tbody, .qv-pt tr{
 	color:white;
-	height:18px;
+	height:3.1rem !important;
+    
 }
 .css_col1 {
     min-width: 80px;
