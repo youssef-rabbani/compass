@@ -43,7 +43,6 @@
 
 /*Devhub stuff*/
 /***************************HEAT MAP Scroll**************************/
-/*ADD ID*/
 #QV-39 .qv-object .qv-inner-object {
   overflow: scroll !important;
 }
@@ -85,6 +84,9 @@
   #v3,
   #vf4 {
     height: 260px !important;
+  }
+  #QV-1-8a, #QV-1-8b, #QV-1-8d, #QV-1-8e{
+    overflow: scroll;
   }
 }
 @media (min-width: 767px) {
