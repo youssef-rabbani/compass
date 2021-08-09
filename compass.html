@@ -862,14 +862,17 @@
 
                 <div class="row">
                   <div class="col-xs-12">
-                    <div
+                    <div class="item bg-dark">
+                      <div class="title" style="height: 35px;">
+                        Visitor Funnel
+                      </div>
+                      <div class="row">
+                        <div
                       style="
                         text-align: right;
                         padding-right: 90px;
                         width: 100%;
                         float: right;
-                        position: absolute;
-                        padding-top: 8px;
                       "
                     >
                       <div
@@ -892,30 +895,20 @@
                         </button>
                       </div>
                     </div>
-                    
-                    <qliksense-card content-height="250px">
-                      <div class="card-title qvt-visualization-title">
-                        Visitor Funnel
                       </div>
                       <div
                         id="sourceMarket-1"
-                        style="
-                          top: 25px;                          
-                          position: relative;
-                        "
                       >
                         <div class="row">
-                          <div class="col-xs-7 col-sm-4" style="padding: 0px; height: 217px;">
+                          <div id="vf1" class="col-xs-12 col-sm-4" style="height: 217px;">
                             <div
                               class="with-title qvobject"
                               id="QV-1-8a"
                               style="overflow-y: hidden;"
                             ></div>
                           </div>
-                          <div
-                            class="col-xs-5 col-sm-8"
-                            style="
-                            padding: 0;
+                          <div id="vf2" class="col-xs-12 col-sm-8"
+                          style="
                               z-index: 0;
                               height: 217px;
                             "
@@ -931,40 +924,26 @@
                       <div
                         id="destination-1"
                         style="
-                          height: 100%;
-                          display: none;
-                          top: 25px;
-                          height: 192px;
-                          position: relative;
+                          display: none;  
                         "
                       >
-                        <div class="row" style="height: 100%">
-                          <div class="col-xs-4" style="padding-right: 0px">
+                        <div class="row">
+                          <div id="vf3" class="col-xs-12 col-sm-4" style="height: 217px;">
                             <div
-                              class="with-title qvobject object"
+                              class="with-title qvobject"
                               id="QV-1-8d"
-                              style="height: 192px"
+                             
                             ></div>
                           </div>
-                          <div
-                            class="col-xs-8"
-                            style="
-                              top: 3px;
-                              margin-left: -151px;
-                              width: calc(66.666% + 151px);
-                              z-index: 0;
-                              height: 192px;
-                            "
-                          >
+                          <div id="vf4" class="col-xs-12 col-sm-8" style="height: 217px;">
                             <div
-                              class="with-title qvobject object"
+                              class="with-title qvobject"
                               id="QV-1-8e"
-                              style="height: 100%"
                             ></div>
                           </div>
                         </div>
                       </div>
-                    </qliksense-card>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -3177,10 +3156,10 @@
                   <div class="col-xs-12" style="padding: 0px">
                     <div class="item bg-dark">
                       <div class="row" style="height: 40px; padding: 0px 16px">
-                        <div class="col-xs-4 title">
+                        <div class="col-xs-12 col-sm-5 title">
                           Understanding Customer Satisfaction
                         </div>
-                        <div class="col-xs-12">
+                        <div class="col-xs-8 col-sm-6" style="padding: 12px;">
                           <div
                             class="d-flex justify-content-end"
                             style="height: 20px; text-align: center"
