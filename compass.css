@@ -631,7 +631,7 @@ paper-card.style-scope.header-card.x-scope.paper-card-0 {
 }
 
 .paper-toolbar-0 {
-  background-image: url(1a.png), url(1b.png);
+  background-image: url(1a.png), url(1b.svg);
   background-size: auto 100%, auto 100%;
   background-repeat: no-repeat;
   background-position: left bottom, right bottom;
