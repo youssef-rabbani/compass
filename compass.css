@@ -90,6 +90,9 @@
   }
 }
 @media (min-width: 767px) {
+  #QV-1-8a, #QV-1-8b, #QV-1-8d, #QV-1-8e{
+    overflow: hidden;
+  }
   #vf1,
   #vf2,
   #vf3,
