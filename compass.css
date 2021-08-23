@@ -40,7 +40,13 @@
   }
 }
 /****************************NAV Bar*******************************/
-
+.filter{
+  padding: 0;
+}
+.filter-container{
+  padding: 0;
+  margin: 0 22px;
+}
 /*Devhub stuff*/
 /***************************HEAT MAP Scroll**************************/
 #QV-39 .qv-object .qv-inner-object {
