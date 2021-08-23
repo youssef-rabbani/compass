@@ -47,6 +47,12 @@
   padding: 0;
   margin: 0 22px;
 }
+@media (min-width: 767px) {
+  .filter-container {
+    position: absolute;
+    right: 0px;
+  }
+}
 /*Devhub stuff*/
 /***************************HEAT MAP Scroll**************************/
 #QV-39 .qv-object .qv-inner-object {
@@ -885,10 +891,7 @@ div.single-object #content {
   font-family: "Source Sans Pro", sans-serif;
   /*font-weight: bold;*/
 }
-.filter-container {
-  position: relative;
-  height: calc(100vh - 65px);
-}
+
 @media (max-width: 767px) {
   .drawer-title {
     height: 56px !important;
