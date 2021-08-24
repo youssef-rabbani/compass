@@ -59,6 +59,10 @@ margin: 0 22px;
 }
 }
 /*Devhub stuff*/
+table.ng-scope {
+  border-collapse: separate !important;
+  border-spacing: 1px !important;
+}
 /***************************HEAT MAP Scroll**************************/
 #QV-39 .qv-object .qv-inner-object {
 overflow: scroll !important;
@@ -396,7 +400,7 @@ list-style: none;
 .my-legend ul.legend-labels li span {
 display: block;
 float: left;
-height: 20px;
+height: 15px;
 width: 35px;
 margin: 0px;
 }
@@ -457,9 +461,7 @@ background-position-x: 300px;
 background-position-y: 22px;
 }
 
-table.ng-scope {
-border-collapse: separate;
-}
+
 span.chart-data-title-label.ng-binding {
 color: white;
 }
@@ -535,7 +537,7 @@ border: none !important;
 .qv-pt tbody,
 .qv-pt tr {
 color: white;
-height: 3.1rem !important;
+height: 18px !important;
 }
 .css_col1 {
 min-width: 80px;
