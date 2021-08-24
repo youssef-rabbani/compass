@@ -535,7 +535,15 @@ table.ng-scope td {
 border: none !important;
 }
 .qv-pt tbody,
-.qv-pt tr {
+#QV-1-8a.qv-pt tr, #QV-1-8b.qv-pt tr, #QV-1-8d.qv-pt tr, #QV-1-8e.qv-pt tr {
+color: white;
+height: 3.1rem !important;
+}
+#QV-2-9c table.ng-scope {
+  border-collapse: separate !important;
+  border-spacing: 1px !important;
+}
+#QV-2-9c.qv-pt tbody, #QV-2-9c.qv-pt tr {
 color: white;
 height: 18px !important;
 }
