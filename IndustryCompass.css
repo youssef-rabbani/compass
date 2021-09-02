@@ -83,6 +83,9 @@ table.ng-scope {
   #QV-1-8e {
     overflow: scroll;
   }
+  #QV-2-9c{
+    height: 250px!important;
+  }
 }
 @media (min-width: 767px) {
   #QV-1-8a,
@@ -106,6 +109,8 @@ table.ng-scope {
     }
   }
   /*Visitor Funnel scroll*/
+ 
+ 
   /***************************HEAT MAP Scroll**************************/
 
   #QV-39 .qv-object .qv-inner-object {
@@ -176,9 +181,6 @@ table.ng-scope {
   }
 }
 
-#QV-2-9c2 .qv-object {
-  padding: 0px;
-}
 #kpiInspire
   article.qv-object.qvt-visualization.qv-can-take-snapshot.qv-layout-spark.qv-object-text-image {
   padding: 0px;
@@ -192,9 +194,7 @@ table.ng-scope {
   padding: 0px;
 }
 
-#QV-2-9c2 td.Pre-Chart-TitleDiv {
-  width: 16.5% !important;
-}
+
 #QV-2-9c .qv-pt .cell.header.left .value {
   font-size: 12px;
   /*text-align: end !important;*/
