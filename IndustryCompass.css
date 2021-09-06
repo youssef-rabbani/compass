@@ -1,3 +1,9 @@
+/*****************************filter font size*************************************/
+.qv-collapsed-listbox .title-wrapper .title{
+  font-size: 1em !important;
+}
+/*****************************filter font size*************************************/
+
 /****************************NAV Bar*******************************/
 @media (max-width: 767px) {
   .navLogo {
@@ -52,14 +58,14 @@
   padding: 0;
   margin: 0 22px;
 }
-@media (min-width: 767px) {
+@media (min-width: 992px) {
   .filter-container {
     position: absolute;
     right: 0px;
   }
 }
 @media (max-width: 767px) {
-  #inspireDvi1 {
+  #inspireDiv1 {
     margin-bottom: 12px;
   }
 }
