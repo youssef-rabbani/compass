@@ -54,10 +54,6 @@
 .filter {
   padding: 0;
 }
-/*.filter-container {
-  padding: 0;
-  margin: 0 22px;
-}*/
 @media (min-width: 992px) {
   .filter-container {
     position: absolute;
@@ -65,6 +61,12 @@
   }
 }
 @media (max-width: 767px) {
+  .lineChart{
+    margin-bottom:45px !important;
+  }
+  .lineChartLegend{
+    margin-top: 30px !important;
+  }
   #inspireDiv1 {
     margin-bottom: 12px;
   }
@@ -81,7 +83,7 @@ table.ng-scope {
   #vf2,
   #v3,
   #vf4 {
-    height: 295px !important;
+    height: 315px !important;
   }
   #QV-1-8a,
   #QV-1-8b,
