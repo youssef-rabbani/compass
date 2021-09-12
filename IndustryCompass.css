@@ -1,3 +1,6 @@
+.hide{
+  display: none;
+}
 /*****************************filter font size*************************************/
 .qv-collapsed-listbox .title-wrapper .title{
   font-size: 1em !important;
@@ -81,7 +84,7 @@ table.ng-scope {
 @media (max-width: 767px) {
   #vf1,
   #vf2,
-  #v3,
+  #vf3,
   #vf4 {
     height: 315px !important;
   }
