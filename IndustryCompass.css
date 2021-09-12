@@ -95,7 +95,10 @@ table.ng-scope {
     overflow: scroll;
   }
   #QV-2-9c{
-    height: 250px!important;
+    height: 355px!important;
+  }
+  #QV-2-9c2{
+    margin-top: 12px;
   }
 }
 @media (min-width: 767px) {
